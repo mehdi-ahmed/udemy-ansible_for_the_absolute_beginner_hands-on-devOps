@@ -1,0 +1,8 @@
+#Remark : 
+# In order to have these commands below succeed, you need to ssh the target machine first to have a fingerprint
+# or go to /etc/ansible/ansible.cfg and uncomment the option 'host_key_checking = false'
+
+
+#commands
+ansible target1 -m ping -i inventory.txt 
+ansible target2 -m ping -i inventory.txt 
