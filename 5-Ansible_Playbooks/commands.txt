@@ -1,6 +1,0 @@
-$ mkdir ansible-demos-exercices
-$ cd ansible-demos-exercices/
-
-# Copy inventory.txt and yaml file in folder ansible-demos-exercices/
-
-$ ansible-playbook playbook-pingtest.yaml -i inventory.txt
