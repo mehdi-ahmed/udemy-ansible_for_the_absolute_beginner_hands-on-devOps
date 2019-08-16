@@ -1,0 +1,24 @@
+#Remark : 
+# In order to have these commands below succeed, you need to ssh the target machine first to have a fingerprint
+# or go to /etc/ansible/ansible.cfg and uncomment the option 'host_key_checking = false'
+
+
+#commands
+#1
+ansible all -m ping -i inventory.txt 
+
+#-------result-------
+target1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+target2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+
+#--------------
+
+#2 - executing an ansible-playbook
+
+$ansible-playbook playbook-pingtest.yaml -i inventory.txt
